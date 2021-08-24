@@ -38,13 +38,11 @@ tracing-subscriber = { version = "0.2.5", features = ["fmt", "tracing-log"] }
 uuid = { version = "0.8", features = ["v4"] }
 
 [dependencies.ffmpeg-next]
-version = "4.3.7"
-default-features = false
-features = ["codec", "filter", "device", "format", "resampling", "postprocessing", "software-resampling", "software-scaling"]
+git = "https://github.com/bigOconstant/rust-ffmpeg.git"
+branch = "master"
 
 [dependencies.ffmpeg-sys-next]
-version = "4.3.5"
-git = "https://github.com/jwiesler/rust-ffmpeg-sys"
+git = "https://github.com/bigOconstant/rust-ffmpeg-sys"
 branch = "master"
 
 [patch.crates-io]
